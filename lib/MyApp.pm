@@ -8,6 +8,9 @@ sub startup {
   # Documentation browser under "/perldoc"
   $self->plugin('PODRenderer');
 
+  # OAuth2 Server
+  $self->plugin( 'OAuth2::Server' => {} );
+
   # Router
   my $r = $self->routes;
 
